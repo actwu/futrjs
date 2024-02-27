@@ -8,7 +8,8 @@ A lightweight js that makes Elements for you
 
 **What is Futr JS?**
 
-Futr JS is a lightweight JavaScript library designed to simplify and streamline the process of creating and manipulating HTML elements. It offers a concise set of functions that make it easier to dynamically add, modify, and style elements within your web pages.
+Futr JS is a lightweight JavaScript library about peoplen whom like to make there html using js and who likes making htmlElm as functions 
+.. designed to simplify and streamline the process of creating and manipulating HTML elements. It offers a concise set of functions that make it easier to dynamically add, modify, and style elements within your web pages.
 
 **Getting Started:**
 
