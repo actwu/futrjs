@@ -4,7 +4,7 @@
 function el(element, parent, dval, dclas, did, datt) {
 const newElement = document.createElement(element);
 const par = document.querySelector(parent);
-newElement.innerText = dval;
+newElement.textContent = dval;
 newElement.classList = dclas;
 newElement.id = did;
 
