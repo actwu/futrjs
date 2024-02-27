@@ -94,8 +94,20 @@ Futr JS is a lightweight JavaScript library about peoplen whom like to make ther
 
 **Examples:**
 
+How to i use it
 ```javascript
-// Create a heading with a class and ID
-el("h1", "header", "Welcome", "main-heading", "welcome-message");
-
-// Create a disabled button with content and
+el(
+// Name
+"box",
+// Parent
+"app",
+// Value
+"TEXT",
+// Class
+"",
+// Id
+"",
+// Attribute
+"b"
+);
+```
