@@ -5,6 +5,8 @@ function el(element, parent, dval, dclas, did, datt) {
 const newElement = document.createElement(element);
 const par = document.querySelector(parent);
 newElement.textContent = dval;
+newElement.innerText = dval;
+newElement.value = dval;
 newElement.classList = dclas;
 newElement.id = did;
 
