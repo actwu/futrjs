@@ -4,9 +4,6 @@ A lightweight js that makes Elements for you
 ---
 
 # doc
-
-I'd be glad to provide a comprehensive documentation for Futr JS, incorporating the best aspects of the previous responses and addressing any potential issues:
-
 **Futr JS Documentation**
 
 **What is Futr JS?**
