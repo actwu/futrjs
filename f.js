@@ -10,9 +10,7 @@ newElement.textContent = val;
 newElement.innerText = val;
 newElement.value = val;
 newElement.classList = clas;
-newElement.id = did;
-if (name == "p") {newElement.setAttribute("b", "")}
-else if (name == "box") {newElement.setAttribute("b", "")}
+newElement.id = did; 
 newElement.setAttribute(at, "");
 parentElement.append(newElement);
 }
