@@ -1,52 +1,66 @@
 // OWNED BY ACTWU
 // CREDIT ME IF YOU USE XDD
+function el(op) {
 
-function el(element, parent, dval, dclas, did, datt) {
-const newElement = document.createElement(element);
-const par = document.querySelector(parent);
-newElement.textContent = dval;
-newElement.innerText = dval;
-newElement.value = dval;
-newElement.classList = dclas;
+const {name, par, val, clas, did, at} = op;
+const newElement = document.createElement(name);
+const parentElement = document.querySelector(par);
+newElement.textContent = val;
+newElement.innerText = val;
+newElement.value = val;
+newElement.classList = clas;
 newElement.id = did;
-
-if (element == "p") {newElement.setAttribute("b", "")}
-else if (element == "box") {newElement.setAttribute("b", "")}
-newElement.setAttribute(datt, "");
-
-par.appendChild(newElement);
+if (name == "p") {newElement.setAttribute("b", "")}
+else if (name == "box") {newElement.setAttribute("b", "")}
+newElement.setAttribute(at, "");
+parentElement.appendChild(newElement);
 }
 
-function elClass(element, dclas) {
-const newElement = document.createElement(element);
-newElement.classList = dclas;
-}
+function elClass(op) {
+  const {name, clas } = op;
 
-function elAddClass(element, dclas) {
-const newElement = document.createElement(element);
-newElement.classList.add(dclas);
-}
-
-function elRemClass(element, dclas) {
-const newElement = document.createElement(element);
-newElement.classList.remove(dclas);
-}
-
-function elTogClass(element, dclas) {
   const newElement = document.createElement(element);
-  newElement.classList.add(dclas);
-  }
-function elAt(element, datt, dval) {
-const newElement = document.createElement(element);
-newElement.setAttribute(datt, dval);
+  newElement.classList = clas;
 }
 
-function elRemAt(element, datt, dval) {
-const newElement = document.createElement(element);
-newElement.removeAttribute(datt, dval);
+function elAddclass(op) {
+  const {name, clas } = op;
+
+  const newElement = document.createElement(element);
+  newElement.classList.add(clas);
 }
 
-function elId(element, did, dval) {
-const newElement = document.createElement(element);
-newElement.id = datt;
+function elRemClass(op) {
+  const {name, clas } = op;
+
+  const newElement = document.createElement(element);
+  newElement.classList.remove(clas);
+}
+
+function elTogClass(op) {
+  const {name, clas } = op;
+
+  const newElement = document.createElement(element);
+  newElement.classList.add(clas);
+}
+
+function elAt(op) {
+  const {name, at, val } = op;
+
+  const newElement = document.createElement(element);
+  newElement.setAttribute(at, val);
+}
+
+function elRemAt(op) {
+  const {name, at, val } = op;
+
+  const newElement = document.createElement(element);
+  newElement.removeAttribute(at, val);
+}
+
+function elId(op) {
+  const {name, did } = op;
+
+  const newElement = document.createElement(element);
+  newElement.id = did;
 }
