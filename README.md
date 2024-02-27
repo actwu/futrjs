@@ -79,10 +79,10 @@ at: "",
 
 ```
 
-** Stay Tuned:**
+**Stay Tuned:**
 
 More exciting features are on the horizon! Share your feedback to shape the future of Futr JS.
 
-**Credit Where Credit Is Due:**
+**_Credit Where Credit Is Due:_**
 Created by ACTWU with passion for a simpler, more elegant approach to element manipulation.
 
