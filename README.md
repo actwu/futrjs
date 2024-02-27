@@ -11,103 +11,78 @@ A lightweight js that makes Elements for you
 Futr JS is a lightweight JavaScript library that makes your htmlEl as types like **_Typescript_**
 that make it easier to dynamically add, modify, and style elements within your web pages.
 
-**Getting Started:**
+**Futr JS: Type-Like Element Creation, Effortlessly**
 
-1. **Include the CDN:**
+** Get Started:**
+
+**1. Import:**
 
    ```html
-   <script src="https://actwu.github.io/futrjs/f.js"></script>
+ <script src="https://actwu.github.io/futrjs/f.js"></script>
    ```
 
-2. **Start using the functions:**
+**2. Unleash Creativity:**
 
    ```javascript
-   // Create a paragraph element with text and a class
-   el("p", "body", "Hello, world!", "greeting");
-
-   // Create a div element with an ID
-   el("div", "container", "", "content-area", "main-content");
-
-   // Create a button with an attribute and disabled state
-   el("button", "body", "Click Me", "", "", "disabled", "data-action", "submit");
+   // Craft a paragraph with attitude
+   el({ name: "p", val: "Greetings, earthlings!", clas: "bold-text" });
    ```
 
-**Functions:**
+**⚡ Core Functions:**
 
-**Creating Elements:**
+**Mastering Element Generation:**
 
-* **`el(element, parent, dval, dclas, did, datt)`:**
-   - Creates a new element of the specified type:
-     - `element`: The type of element to create (e.g., "div", "p", "span").
-     - `parent (optional)`: The selector (CSS selector string) of the parent element to append the new element to. If not provided, the element is appended to the body.
-     - `dval (optional)`: The text content of the element.
-     - `dclas (optional)`: A space-separated string of class names to apply to the element.
-     - `did (optional)`: The ID to assign to the element.
-     - `datt (optional)`: Additional attributes to set on the element as an object (e.g., `{ "data-action": "submit" }`).
+* **`el(op)`:** Breathes life into HTML elements with ease.
+   - `op`: An object specifying element details:
+     - `name`: Element type (e.g., "div", "p", "span").
+     - `par` (optional): Parent element's CSS selector.
+     - `val` (optional): Text content.
+     - `clas` (optional): Space-separated class names.
+     - `did` (optional): ID for element identification.
+     - `at` (optional): Object for additional attributes.
 
-**Working with Classes:**
+**Class-y Moves:**
 
-* **`elClass(element, dclas)`:**
-   - Creates a new element and sets its class(es):
-     - `element`: The type of element to create.
-     - `dclas`: A space-separated string of class names to apply.
+* **`elClass(op)`:** Creates an element with class attitude.
+* **`elAddClass(op)`:** Enhances an element with a stylish class.
+* **`elRemClass(op)`:** Strips an element of its classiness.
+* **`elTogClass(op)`:** Toggles a class for a change of scenery.
 
-* **`elAddClass(element, dclas)`:**
-   - Adds a class(es) to an existing element:
-     - `element`: The CSS selector of the existing element.
-     - `dclas`: A space-separated string of class names to add.
+**Attribute Aficionado:**
 
-* **`elRemClass(element, dclas)`:**
-   - Removes a class(es) from an existing element:
-     - `element`: The CSS selector of the existing element.
-     - `dclas`: A space-separated string of class names to remove.
+* **`setAttribute(op)`:** Empowers elements with attributes for greater depth.
+* **`removeAttribute(op)`:** Strips elements of unwanted attributes.
 
-* **`elTogClass(element, dclas)`:**
-   - Toggles a class(es) on an existing element, adding it if it's not present and removing it if it is:
-     - `element`: The CSS selector of the existing element.
-     - `dclas`: A space-separated string of class names to toggle.
+**Identity Mastery:**
 
-**Setting Attributes:**
+* **`elId(op)`:** Assigns unique IDs for pinpoint targeting.
 
-* **`elAt(element, datt, dval)`:**
-   - Sets an attribute on an existing element:
-     - `element`: The CSS selector of the existing element.
-     - `datt`: The name of the attribute to set.
-     - `dval`: The value to assign to the attribute.
+** Additional Delights:**
 
-* **`elRemAt(element, datt)`:**
-   - Removes an attribute from an existing element:
-     - `element`: The CSS selector of the existing element.
-     - `datt`: The name of the attribute to remove.
+* **TypeScript-like Experience:** Enjoy element creation with a similar feel to TypeScript, within JavaScript!
+* **Concise Syntax:** Write less, achieve more with a streamlined approach to DOM manipulation.
 
-**Setting Element ID:**
+***✨ Examples That Shine:***
 
-* **`elId(element, did)`:**
-   - Sets the ID of an existing element:
-     - `element`: The CSS selector of the existing element.
-     - `did`: The ID to assign to the element.
-
-**Additional Notes:**
-
-- The `el` function automatically sets a "b" attribute for "p" and "box" elements, but details regarding its purpose are unavailable and require clarification from the library developer.
-- For clarity and consistency, consider replacing "elAt" and "elRemAt" with more conventional function names like "setAttribute" and "removeAttribute", respectively.
-
-**Examples:**
-
-How to i use it
 ```javascript
-el(
-// Name
-"box",
-// Parent
-"app",
-// Value
-"TEXT",
-// Class
-"",
-// Id
-"",
-// Attribute
-"b"
-);
+// Craft an attention-grabbing button
+
+
+const myElement = el({
+name: "p",
+par: "app",
+val: "rsa",
+clas: "black smallFont",
+did: "title",
+at: "",
+});
+
 ```
+
+** Stay Tuned:**
+
+More exciting features are on the horizon! Share your feedback to shape the future of Futr JS.
+
+**Credit Where Credit Is Due:**
+Created by ACTWU with passion for a simpler, more elegant approach to element manipulation.
+
