@@ -70,12 +70,11 @@ that make it easier to dynamically add, modify, and style elements within your w
 
 const myElement = el({
 name: "p",
-par: "app",
-val: "rsa",
-clas: "black smallFont",
-did: "title",
-at: "",
-});
+par: "body",
+val: "title",
+clas: "x",
+did: "x",
+at: "x",});
 
 ```
 
