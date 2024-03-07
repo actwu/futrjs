@@ -3,26 +3,24 @@
 // CREDIT ME IF YOU USE XDD
 function el(op) {
 
-    const body = document.querySelector("body");
+    let HTMLbody = document.querySelector("body");
     const {name, par, val, clas, did, at, atval} = op;
-    const newElement = document.createElement(name);
+    let newElement = document.createElement(name); 
     const parentElement = document.querySelector(par);
-    
-    if (val !== "" || val !== " ") { newElement.textContent = val; }
+
+    if (val !== "" || val !== " " || val) { newElement.textContent = val; }
     else { newElement.textContent = "None" }
    
-    if (clas !== "" || clas !== " ") { newElement.classList = clas; }
+    if (clas !== "" || clas !== " " || clas) { newElement.classList = clas; }
     
-    if (did !== "" || did !== " ") { newElement.id = did; }
+    if (did !== "" || did !== " " || did) { newElement.id = did; }
     else { newElement.id = Math.floor(Math.random() * 99); }
-  
-  
-    if (par !== "" || par !== "" || par) { parentElement.append(newElement); }
-    else { body.append(newElement); }
-
 
     if (at !== "" || at !== " " || at) { newElement.setAttribute(at, atval); }
-    else {at = ""; newElement.setAttribute("none", "")}
+    else { newElement.setAttribute("none", ""); }
+
+    if(par === "" || par === " " || !par ) { HTMLbody.append(newElement); }
+    else { parentElement.append(newElement); }
 
   }
     
