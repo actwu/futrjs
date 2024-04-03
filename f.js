@@ -28,48 +28,48 @@ else { parentElement.append(newElement); }
 function elClass(op) {
 const {name, clas } = op;
 
-const newElement = document.createElement(element);
-newElement.classList = clas;
+const target = document.querySelector(name);
+target.classList = clas;
 }
 
 function elAddclass(op) {
 const {name, clas } = op;
 
-const newElement = document.createElement(element);
-newElement.classList.add(clas);
+const target = document.querySelector(name);
+target.classList.add(clas);
 }
 
 function elRemClass(op) {
 const {name, clas } = op;
 
-const newElement = document.createElement(element);
-newElement.classList.remove(clas);
+const target = document.querySelector(name);
+target.classList.remove(clas);
 }
 
 function elTogClass(op) {
 const {name, clas } = op;
 
-const newElement = document.createElement(element);
-newElement.classList.add(clas);
+const target = document.querySelector(name);
+target.classList.add(clas);
 }
 
 function elAt(op) {
 const {name, at, val } = op;
 
-const newElement = document.createElement(element);
-newElement.setAttribute(at, val);
+const target = document.querySelector(name);
+target.setAttribute(at, val);
 }
 
 function elRemAt(op) {
 const {name, at, val } = op;
 
-const newElement = document.createElement(element);
-newElement.removeAttribute(at, val);
+const target = document.querySelector(name);
+target.removeAttribute(at, val);
 }
 
 function elId(op) {
 const {name, id } = op;
 
-const newElement = document.createElement(element);
-newElement.id = id;
+const target = document.querySelector(name);
+target.id = id;
 }
