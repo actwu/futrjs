@@ -61,10 +61,10 @@ target.setAttribute(at, val);
 }
 
 function elRemAt(op) {
-const {name, at, val } = op;
+const {name, at } = op;
 
 const target = document.querySelector(name);
-target.removeAttribute(at, val);
+target.removeAttribute(at);
 }
 
 function elId(op) {
