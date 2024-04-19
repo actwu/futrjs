@@ -13,7 +13,7 @@ that make it easier to dynamically add, modify, and style elements within your w
 
 **Futr JS: Type-Like Element Creation, Effortlessly**
 
-** Get Started:**
+**Get Started:**
 
 **1. Import:**
 
